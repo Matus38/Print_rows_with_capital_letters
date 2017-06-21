@@ -1,0 +1,13 @@
+vypis MACRO TXT
+	
+	mov DX, OFFSET TXT
+	mov ah, 9
+	int 21h
+	
+ENDM
+
+vypisznak MACRO 
+	mov ah, 02h
+	int 21h
+	
+ENDM
